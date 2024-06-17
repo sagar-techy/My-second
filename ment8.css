@@ -1,0 +1,257 @@
+*{
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: SaolDisplay-Regular;
+    overscroll-behavior: none;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#btn{
+    height: 50px;
+    width: 250px;
+    font-size: 20px;
+    font-weight: 600;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 100px;
+    background-color: transparent;
+    position: relative;
+    z-index: 99;
+    color: white;
+    transition: all ease 1s;
+    overflow: hidden;
+    position: relative;
+}
+#btn:hover{
+    color: black;
+    
+    h3{
+        transform: translateY(-140%);
+        animation-name: btn;
+        animation-duration: .5s;       
+        animation-fill-mode: forwards;
+        animation-delay: 0.2s;    
+    }
+}
+#btn::after{
+    content: "";
+    height: 100%;
+    width: 0%;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all ease .5s;
+    z-index: -1;
+}
+#btn:hover::after{
+    width: 100%;
+    
+}
+#btn2{
+    padding: 12px 35px;
+    font-size: 20px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 100px;
+    z-index: 99;
+    color: black;
+    margin-top: 80px;
+    background-color: transparent;
+    position: relative;
+    transition: all ease .5s;
+    overflow: hidden;
+    position: relative;
+}
+#btn2:hover{
+    color: white;
+    h3{
+        transform: translateY(-140%);
+        animation-name: btn;
+        animation-duration: .5s;
+        animation-fill-mode: forwards;
+        animation-delay: 0.2s;
+        
+    }
+}
+#btn2::after{
+    content: "";
+    height: 100%;
+    width: 0%;
+    background-color: #222;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all ease .5s;
+    z-index: -1;
+}
+#btn2:hover::after{
+    width: 100%;
+}
+#btn3{
+    height: 50px;
+    width: 150px;
+    font-size: 20px;
+    font-weight: 600;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 100px;
+    background-color: transparent;
+    position: relative;
+    z-index: 99;
+    color: white;
+    transition: all ease .5s;
+    overflow: hidden;
+    position: relative;
+}
+#btn3:hover{
+    color: black;
+    h3{
+        transform: translateY(-140%);
+        animation-name: btn;
+        animation-duration: .5s;
+        animation-fill-mode: forwards;
+        animation-delay: 0.2s;
+        
+    }
+    
+}
+#btn3::after{
+    content: "";
+    height: 100%;
+    width: 0%;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all ease .5s;
+    z-index: -1;
+}
+#btn3:hover::after{
+    width: 100%;
+}
+#btn4{
+    padding: 10px 40px;
+    font-size: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 100px;
+    z-index: 99;
+    color: black;
+    margin-top: 80px;
+    background-color: transparent;
+    position: relative;
+    transition: all ease .5s;
+    overflow: hidden;
+    position: relative;
+}
+#btn4:hover{
+    color: white;
+    h3{
+        transform: translateY(-140%);
+        animation-name: btn;
+        animation-duration: .5s;
+        animation-fill-mode: forwards;
+        animation-delay: 0.2s;
+        
+    }
+}
+#btn4::after{
+    content: "";
+    height: 100%;
+    width: 0%;
+    background-color: #222;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all ease .5s;
+    z-index: -1;
+}
+#btn4:hover::after{
+    width: 100%;
+}
+.p1{
+    overflow: hidden;
+}
+.p11{
+    transition: all ease .5s;
+}
+.p11:hover{
+    scale: 1.1;
+}
+.p2{
+    overflow: hidden;
+}
+.p22{
+    transition: all ease .5s;
+}
+.p22:hover{
+    scale: 1.1;
+}
+.p3{
+    overflow: hidden;
+}
+.p33{
+    transition: all ease .5s;
+}
+.p33:hover{
+    scale: 1.1;
+}
+.p4{
+    overflow: hidden;
+}
+.p44{
+    transition: all ease .5s;
+}
+.p44:hover{
+    scale: 1.1;
+}
+.p5{
+    overflow: hidden;
+}
+.p55{
+    transition: all ease .5s;
+}
+.p55:hover{
+    scale: 1.1;
+}
+.p6{
+    overflow: hidden;
+}
+.p66{
+    transition: all ease .5s;
+}
+.p66:hover{
+    scale: 1.1;
+}
+.mar1{
+    display: inline-block;
+    animation-name: iden;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+    display: flex;
+    gap: 40px;
+}
+.main1{
+    white-space: nowrap;
+    overflow: hidden;
+    display: flex;
+    gap: 40px;
+    background: linear-gradient(to right, #ac5e1c, #36aa93, #1a302d);
+}
+@keyframes iden {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+    
+}
+@keyframes btn {
+    0%{
+       transform: translateY(140%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
